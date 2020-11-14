@@ -35,14 +35,6 @@ gmm_5 <- list(alpha = c(0.6397767, 0.3602233),
                            matrix(c(5.934738, 3.556337, 3.556337, 2.721583), 2,
                                   dimnames = list(c("A", "B"), c("A", "B")))))
 class(gmm_5) <- "gmm"
-gmm_6 <- list(alpha = c(0.5097776, 0.4902224),
-              mu = matrix(c(5.964699, 3.731908, 3.656837, 6.658659), 2,
-                          dimnames = list(c("A", "B"), NULL)),
-              sigma = list(matrix(c(4.624179, 1.469808, 1.469808, 3.334817), 2,
-                                  dimnames = list(c("A", "B"), c("A", "B"))),
-                           matrix(c(8.139641, 4.904212, 4.904212, 3.160486), 2,
-                                  dimnames = list(c("A", "B"), c("A", "B")))))
-class(gmm_6) <- "gmm"
 
 test_that("perform the EM algorithm", {
   expect_equal(em(gmm_1,
@@ -125,28 +117,6 @@ test_that("perform the EM algorithm with regularization", {
                                          0.04913058, 0.8882116),
                                        6),
                     seq_loglik = c(- 151.31306, - 31.62107, - 30.51398)),
-               tolerance = 0.01)
-})
-
-test_that("perform the EM algorithm with a negative convergence criterion", {
-  expect_equal(em(gmm_1,
-                  data.frame(A = c(0, 3, 6, 9, 3, 8), B = c(4, 7, 1, 6, 4, 9)),
-                  regul = 0.001, epsilon = 1e-15),
-               list(gmm = gmm_6,
-                    posterior = matrix(c(0.01295177, 0.02437231, 1, 1,
-                                         0.99996552, 0.02137571, 0.9870482,
-                                         0.9756277, 1.175591e-52, 2.253106e-16,
-                                         3.448166e-05, 0.9786243),
-                                       6),
-                    seq_loglik = c(- 151.26806, - 31.61083, - 30.49363,
-                                   - 29.49672, - 29.28277, - 29.20810,
-                                   - 29.17229, - 29.16094, - 29.15857,
-                                   - 29.15819, - 29.15814, - 29.15813,
-                                   - 29.15813, - 29.15813, - 29.15813,
-                                   - 29.15813, - 29.15813, - 29.15813,
-                                   - 29.15813, - 29.15813, - 29.15813,
-                                   - 29.15813, - 29.15813, - 29.15813,
-                                   - 29.15813)),
                tolerance = 0.01)
 })
 

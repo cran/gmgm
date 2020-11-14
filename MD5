@@ -1,5 +1,6 @@
-9477b2eff71e26325cf0625507230c08 *DESCRIPTION
+d8c3b20255d0cf3ff075dc5c32567437 *DESCRIPTION
 ea29f37ca95b5c5cd24e7e74b8f0b2ee *NAMESPACE
+474e4b6ad5d7f03f50e8d0685be7cce9 *NEWS.md
 9c0e432c4a14caa526018c031c6946db *R/AIC.R
 0f9cb5ac82a3f131f056ece8429f406c *R/BIC.R
 88584aebcc9c8b5397e655f773576c01 *R/add_arcs.R
@@ -108,7 +109,7 @@ b3b7af08587cbb716c32330c2aabd666 *tests/testthat/test-aggregation.R
 916a74d2abf4e093b99178f216ab6b20 *tests/testthat/test-conditional.R
 465d1e2f73c5ab540d938121b4647bd2 *tests/testthat/test-density.R
 964fe040bcd8acb563b61085059f008a *tests/testthat/test-ellipses.R
-f18b1c0bc296b536e393906bae64c5a0 *tests/testthat/test-em.R
+3e373af2b2bd9903b501402bb067a9b3 *tests/testthat/test-em.R
 abf2539b0117dbb67d19d9fc490242a0 *tests/testthat/test-expectation.R
 c98e36c3908b71ed6693a713b5006564 *tests/testthat/test-filtering.R
 cb2e243935f54ab12a1280d262b64834 *tests/testthat/test-gmbn.R
