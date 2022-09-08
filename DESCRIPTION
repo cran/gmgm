@@ -1,7 +1,7 @@
 Package: gmgm
 Type: Package
 Title: Gaussian Mixture Graphical Model Learning and Inference
-Version: 1.1.1
+Version: 1.1.2
 Authors@R: c(
     person("Jérémy", "Roos", email = "jeremy.roos@gmail.com",
     role = c("aut", "cre", "cph")),
@@ -22,11 +22,11 @@ Suggests: testthat (>= 2.3.2)
 License: GPL-3
 Encoding: UTF-8
 LazyData: true
-RoxygenNote: 7.2.0
+RoxygenNote: 7.2.1
 NeedsCompilation: no
-Packaged: 2022-05-27 18:15:51 UTC; jerem
+Packaged: 2022-09-08 20:12:45 UTC; jerem
 Author: Jérémy Roos [aut, cre, cph],
   RATP Group [fnd, cph]
 Maintainer: Jérémy Roos <jeremy.roos@gmail.com>
 Repository: CRAN
-Date/Publication: 2022-05-27 18:40:02 UTC
+Date/Publication: 2022-09-08 20:32:55 UTC
